@@ -35,16 +35,29 @@ img{
   display: block;
 }
 .container{
-  width: 1158px;
-  /* outline: 2px solid #a7a658; */
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width:480px) {
+  .container{
+    width: 480px;
+  }
+}
+@media screen and (min-width:768px) {
+  .container{
+    width: 768px;
+  }
+}
+@media screen and(min-width:1440px) {
+  .container{
+    width: 1440px;
+  }
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline:1px solid #c1ad3e; */
 }
 .flex-container{
   display: flex;
