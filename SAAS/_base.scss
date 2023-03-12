@@ -1,0 +1,40 @@
+@import "./components/vars";
+@import "./components/sections";
+@import "./components/container";
+@import "./components/header";
+@import "./utils/breakpoints";
+
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #31D0AA;
+
+  @media screen and (min-width: 800px) {
+    background-color: orange;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p,
+h1,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}

@@ -1,65 +1,18 @@
-:root{
-  --Iris:#4D5AE5;
-  --Ocean:#404BBF;
-  --NAVY-BLUE:#2E2F42;
-  --SLATE:#434455;
-  --LIGHTSLATE:#8E8F99;
-  --CLOUD:#F4F4FD;
-  --CORNFLOWER:#E7E9FC;
-  --GREEN:#31D0AA;
-  --GREY:#2E2F42;
-  --NAVYBLUEMODAL:#2E2F42;
-  --Button:#2196F3;
 
 
-}
-body{
-  font-family: Roboto, sans-serif;
-  background-color: #31D0AA;
-}
-li{
-  list-style: none;
-}
-ul{
-  padding-inline-start: 0;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-p,h1,h2{
-  margin-top: 0px;
-  margin-bottom: 0;
-}
-.link{
-  text-decoration: none;
-}
-img{
-  display: block;
-}
-.container{
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width:480px) {
-  .container{
-    width: 480px;
-  }
-}
+
+
+
 @media screen and (min-width:768px) {
-  .container{
     width: 768px;
   }
-}
+
 @media screen and(min-width:1440px) {
   .container{
     width: 1440px;
   }
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .flex-container{
   display: flex;
   flex-wrap: wrap;
@@ -101,19 +54,7 @@ img{
 .accent-logo{
   color: var(--NAVY-BLUE);
 }
-.link-header{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 
-  color: var(--NAVY-BLUE);
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .link-header:hover,
 .link-header:focus,
 .adress-header:hover,
