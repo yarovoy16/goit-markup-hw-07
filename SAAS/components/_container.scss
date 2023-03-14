@@ -4,8 +4,15 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media screen and (min-width: $mobile) {
+      min-width: $mobile;
+      background-color: orange;
+      color: aqua;
+    }
 
-  @media screen and(min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $desktop) {
+      min-width: $tablet;
+      background-color: orange;
+      color: aqua;
     }
 }

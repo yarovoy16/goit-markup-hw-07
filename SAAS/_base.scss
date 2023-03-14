@@ -1,17 +1,8 @@
-@import "./components/vars";
-@import "./components/sections";
-@import "./components/container";
-@import "./components/header";
-@import "./utils/breakpoints";
+
 
 
 body {
   font-family: Roboto, sans-serif;
-
-  @media screen and (min-width: 800px) {
-    background-color: orange;
-    color: aqua;
-  }
 }
 
 li {
