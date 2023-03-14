@@ -15,4 +15,8 @@
       background-color: orange;
       color: aqua;
     }
+
+  @media screen and (min-width: $desktop ) {
+    min-width: $desktop;
+  }
 }
