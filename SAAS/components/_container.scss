@@ -5,18 +5,50 @@
   margin-left: auto;
 
   @media screen and (min-width: $mobile) {
-      min-width: $mobile;
-      background-color: orange;
-      color: aqua;
+      width: 480px;
+      background-color: aqua;
+      text-align: center;
+    
     }
-
-  @media screen and (min-width: $desktop) {
-      min-width: $tablet;
-      background-color: orange;
-      color: aqua;
+  
+  @media screen and (min-width: $tablet) {
+      min-width: 768px;
+      background-color: bisque;
+  
     }
-
-  @media screen and (min-width: $desktop ) {
-    min-width: $desktop;
   }
+
+.flex-container {
+  @media screen and (min-width: $tablet) {
+      min-width: 768px;
+      background-color: bisque;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+}
+.nav-flex {
+  @media screen and (min-width: $tablet) {
+  display: flex;
+  margin-left: 76px;
+}
+}
+.nav-flex li+li {
+  @media screen and (min-width: $tablet) {
+  margin-left: 40px;
+}
+}
+
+.contacts-flex {
+  @media screen and (min-width: $tablet) {
+  display: flex;
+  margin-left: auto;
+}
+}
+
+.contacts-flex li+li  {
+  @media screen and (min-width: $tablet) {
+  margin-left: 30px;
+}
 }

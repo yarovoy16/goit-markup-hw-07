@@ -12,16 +12,74 @@
   --Button: #2196F3;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   padding-left: 16px;
   padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 428px) {
+  .container {
+    width: 480px;
+    background-color: aqua;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    background-color: bisque;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-container {
+    min-width: 768px;
+    background-color: bisque;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-flex li + li {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-flex li + li {
+    margin-left: 30px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
@@ -54,11 +112,6 @@
 
 body {
   font-family: Roboto, sans-serif;
-}
-@media screen and (min-width: 800px) {
-  body {
-    background-color: orange;
-  }
 }
 
 li {
