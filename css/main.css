@@ -17,6 +17,7 @@
   padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 @media screen and (min-width: 428px) {
   .container {
