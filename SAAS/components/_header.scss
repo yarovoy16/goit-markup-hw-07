@@ -13,7 +13,7 @@
   color: $NAVY-BLUE;
 }
 .menu-button{
-  @media screen and (max-width: $mobile){
+  @media screen and (max-width: $tablet){
   stroke: currentColor;
   background-color: transparent;
   border:none;
@@ -31,10 +31,9 @@
   &.is-open .icon-menu{
     display: none;
   }
-
-  @extend %btn-closse
    
 }
+
 
  
 

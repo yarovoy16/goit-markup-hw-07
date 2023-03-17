@@ -80,7 +80,7 @@
   color: var(--NAVY-BLUE);
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 768px) {
   .menu-button {
     stroke: currentColor;
     background-color: transparent;
