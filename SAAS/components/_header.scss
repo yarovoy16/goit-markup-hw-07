@@ -12,6 +12,31 @@
 .accent-logo {
   color: $NAVY-BLUE;
 }
+.menu-button{
+  @media screen and (max-width: $mobile){
+  stroke: currentColor;
+  background-color: transparent;
+  border:none;
+  margin: 0;
+  padding: 0;
+  }
+
+  &.icon-cross {
+    display: none;}
+
+  &.is-open .icon-cross{
+    display: block;
+  }
+  
+  &.is-open .icon-menu{
+    display: none;
+  }
+
+  @extend %btn-closse
+   
+}
+
+ 
 
 .link-header {
   font-weight: 500;
