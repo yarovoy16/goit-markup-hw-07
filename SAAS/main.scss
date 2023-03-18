@@ -1,10 +1,13 @@
 
 @import "./components/vars";
+@import "./base";
 @import "./utils/breakpoints";
+
 @import "./components/container";
 @import "./components/sections";
 @import "./components/header";
-@import "./base";
+
+@import "./components/_burger";
 
 
 

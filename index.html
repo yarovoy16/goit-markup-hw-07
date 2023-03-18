@@ -14,28 +14,44 @@
   <header>
       <div class="container flex-container">
         <a class="link logo" href="./index.html">Web<span class="accent-logo">studio</span></a>
-        <nav>
-          <button type="button" class="menu-button is-open">
-          <svg class="btn-close" width="32" height="22" aria-label="Переключатель мобильного меню">
-            <use class='icon-cross ' href="./images/icons.svg#hamburger"></use>
-            <use class="icon-menu" href="./images/icons.svg#icon-closed"></use>
-          </svg>
+         
+        
+        <button type="button" class="menu-button js-open-menu">
+            <svg class="btn-open" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/icons.svg#hamburger"></use>
+              <use class="icon-cross" href="./images/icons.svg#icon-closed" width="30" height="30"></use>
+            </svg>
           </button>
-          <!-- <ul class="nav-flex">
+
+
+        <nav class="nav">    
+          <ul class="nav-flex">
             <li><a class="link link-header link-current" href="./index.html">Studio</a></li>
-            <li><a class="link link-header" href="./portfolio.html">Portfolio</a>
-            </li>
+            <li><a class="link link-header" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link link-header" href="">Contacts</a></li>
-            
-          </ul> -->
+          </ul>
         </nav>
-        <!-- <ul class="contacts-flex">
+        <ul class="contacts-flex">
           <li><a class="link adress-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="link adress-header" href="tel:+11-000-111-11-11">+11 (000) 111-11-11</a></li>
-        </ul> -->
+        </ul>
       </div>
+
+      <div class="js-menu-container">
+        <button type="button" class="menu-button js-close-menu">
+          <svg class="btn-close" width="32" height="22" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#hamburger"></use>
+            <use class="icon-cross" href="./images/icons.svg#icon-closed"></use>
+          </svg>
+        </button>
+        <li><a class="link" href="./index.html">Studio</a></li>
+        <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="link" href="">Contacts</a></li>
+      </div>
+        
+
   </header>
-  <main>
+  <!-- <main> -->
     <!-- <section class="section-hero">
         <h1 class="title-text">Effective Solutions for Your Business</h1>
         <button class="btn-hero" type="button" data-modal-open > Order Service</button>
@@ -291,9 +307,9 @@
       </div>
     </section> -->
 
-  </main>
-<!-- 
-  <footer class="bg-footer">
+  <!-- </main> -->
+
+  <!-- <footer class="bg-footer">
     <div class="container flex-footer">
         <div class="footer-box1">
           <a class="link logo" href="./index.html">Web<span class="accent-logo-footer">studio</span></a>
@@ -393,9 +409,13 @@
       </div>
       <button type="submit" class="submit-btn">Send</button>
     </div>
-  </div>
-  <script src="./js/modal.js">
-    
-  </script> -->
+  </div> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/modal.js">    
+  </script>
+  <script src="./js/menu.js"></script>
+
   </body>
 </html>

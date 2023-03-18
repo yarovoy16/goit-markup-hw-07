@@ -10,7 +10,9 @@
   --GREY: #2E2F42;
   --NAVYBLUEMODAL: #2E2F42;
   --Button: #2196F3;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 $Iris: var(--Iris);
 $Ocean: var(--Ocean);
 $NAVY-BLUE: var(--NAVY-BLUE);
@@ -23,27 +25,7 @@ $GREY: var(--GREY);
 $NAVYBLUEMODAL:var(--NAVYBLUEMODAL);
 $Button:var(--Button);
 
-%btn-close {
-  position: absolute;
-  display: flex;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--CORNFLOWER);
-  border-radius: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-%btn-close:focus {
-  background-color: var(--Ocean);
-  border: none;
-  fill: #FCFCFC;
-}
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 

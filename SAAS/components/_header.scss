@@ -5,38 +5,46 @@
   font-family: Raleway;
   font-size: 18px;
   line-height: 21px;
-
-
 }
 
 .accent-logo {
   color: $NAVY-BLUE;
 }
-.menu-button{
-  @media screen and (max-width: $tablet){
-  stroke: currentColor;
-  background-color: transparent;
-  border:none;
-  margin: 0;
-  padding: 0;
-  }
 
-  &.icon-cross {
-    display: none;}
 
-  &.is-open .icon-cross{
+.nav{
+  display: none;
+  @media screen and (min-width: $tablet) {
     display: block;
   }
-  
-  &.is-open .icon-menu{
-    display: none;
-  }
-   
 }
 
+.contacts-flex {
+  display: none;
+  @media screen and (min-width: $tablet) {
+  display: flex;
+  margin-left: auto;
+}
+}
 
- 
+.contacts-flex li+li {
+  @media screen and (min-width: $desktop) {
+  margin-left: 30px;
+}
+}
 
+.nav-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 76px;
+  }
+}
+
+.nav-flex li+li {
+  @media screen and (min-width: $tablet) {
+    margin-left: 40px;
+  }
+}
 .link-header {
   font-weight: 500;
   font-size: 14px;
@@ -55,18 +63,7 @@
     
 }
     
-.nav-flex {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    margin-left: 76px;
-  }
-}
 
-.nav-flex li+li {
-  @media screen and (min-width: $tablet) {
-    margin-left: 40px;
-  }
-}
 
 .adress-header {
   font-weight: 400;
