@@ -24,6 +24,10 @@
   @media screen and (min-width: $tablet) {
   display: flex;
   margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+      margin-left: auto;
+    }
 }
 }
 
@@ -45,41 +49,7 @@
     margin-left: 40px;
   }
 }
-.link-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 
-  color: $NAVY-BLUE;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: block;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus{
-    color: $Ocean;
-  }
-    
-}
-    
-
-
-.adress-header {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: var(--SLATE);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.contacts-flex {
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
-  }
-}
 
 .contacts-flex li+li {
   @media screen and (min-width: $desktop) {

@@ -9,21 +9,14 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
 
   @media screen and (min-width: $tablet) {
     display: none;
   }
 
-  & .icon-cross {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
-
-  // &.is-open .icon-cross {
-  //   display: none;
-  // }
 
   &.is-open .icon-cross {
     display: block;
@@ -35,18 +28,95 @@
 }
 
 
-// .js-menu-container{
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   background-color: white;
-//   transform: translateX(-100%);
-//   transition: transform 500ms $cubic-bezier;
+.js-menu-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 80px;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 500ms $cubic-bezier;
 
-//   &.is-open{
-//     transform: translateX(0);
-//   }
 
-// }
+  &.is-open{
+    transform: translateX(0);
+  }
+
+}
+
+.btn-close {
+  position: absolute;
+  display: flex;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: var(--CORNFLOWER);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-close:focus {
+  background-color: var(--Ocean);
+  border: none;
+  fill: #FCFCFC;
+}
+
+.block-menu-link {
+  margin-bottom: 284px;
+}
+
+.link-menu-mobile {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: $NAVY-BLUE;
+}
+
+.link-menu-mobile:focus,
+.link-menu-mobile:hover,
+.adress-menu-mobile:hover,
+.adress-menu-mobile:focus {
+  color: var(--Ocean);
+}
+
+.link-current {
+  color: var(--Ocean);
+}
+
+.link-menu-mobile:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.menu-mobile-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: $SLATE;
+}
+
+.menu-mobile-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: $SLATE;
+}
+
+.menu-mobile-email:hover .menu-mobile-email:focus,
+.menu-mobile-tel:hover .menu-mobile-tel:focus {
+  color: $Iris;
+}
